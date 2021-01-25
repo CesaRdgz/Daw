@@ -1,11 +1,10 @@
-package Arrays;
+package Metodos;
 
+import java.util.Scanner;
 import java.util.Arrays;
 
-public class E2 {
+public class Ej23Metodos {
     public static void main(String[] args) {
-
-        String[]array =  new String[5];
 
     }
 }
