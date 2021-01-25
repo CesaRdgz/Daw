@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+        <form action="http://jkorpela.fi/cgibin/echo.cgi" method="get"></form>
+    <fieldset>
+        <legend>Datos personales</legend>
+            <p>DNI: <input type="text" name="DNI" maxlength="9"></p>
+            <p>Apellido: <input type="text" name="Apellido" maxlength="30"></p>
+            <p>Nombre: <input type="text" name="Nombre" maxlength="15"></p>
+            <p>Fecha de nacimiento: <input type="text" name="Fecha de nacimiento" placeholder="dd/mm/aa"></p>
+        <p> <select name="Nacionalidad">
+            <option selected>Español</option>
+            <option>Frances</option>
+            <option>Aleman</option>
+            </select>
+        </p>
+
+    </fieldset> 
+    <fieldset>
+        <legend>Inicio de sesion</legend>
+            <p>Correo electronico: <input type="email" name="correo" size="40"></p>
+            <p>Contraseña: <input type="password" name="contrasena"></p>
+    </fieldset>
+            <p> <input type="radio" name="boton" value="hombre"> Hombre<br>
+                <input type="radio" name="boton" value="mujer"> Mujer </p>
+            <p> <textarea name="texto" rows="4" cols="40" placeholder="Comentarios"></textarea> </p>
+            <p><input type="checkbox" name="casilla" checked> ¿Desea recibir noticias por correo electronico?</p>
+    <p> <input type="button" value="Enviar"> <input type="button" value="Restablecer"></p>
+</body>
+</html>

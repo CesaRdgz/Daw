@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+
+<div class="jumbotron">
+    <div class="row">
+    <div class="container col-xl-4 col-sm-12">
+        <img src="../img/Chihiro.png" height="80" width="80"/>
+    </div>
+    <div class="container col-xl-4 col-sm-12">
+        <h2 id="Titulo"> El viaje de Chihiro</h2>
+        <p id="Subtitulo"> Hayao Miyazaki </p>
+    </div>
+    <div class="container col-xl-4 col-sm-12">
+        <p id="buscar"> Buscar:</p>
+        <input type="text" name="Buscar" >
+    </div>
+    </div>
+</div>
+    <div class="row">
+    <div class="container col-3 bg-success">
+        <p><a href="pagina1.html">pagina</a> </p>
+    </div>
+    <div class="container col-3 bg-success">
+        <p><a href="http://localhost:63342/examen-RODRIGUEZ-GONZALEZ/ext/pagina2.html?_ijt=r429pj2k94i0j3174hif03p9i6">Ir a otras paginas</a></p>
+    </div>
+    <div class="container col-3 bg-success">
+        <p><a href="https://www.ecologistasenaccion.org/"> ecologistas</a> </p>
+    </div>
+    <div class="container col-3 bg-success">
+        <p><a href="#footer">al final</a> </p>
+    </div>
+    </div>
+    <div class="row">
+    <div class="container col-xl-3 col-sm-12">
+        <h2>Imagen</h2>
+        <img src="../img/chihiro_play.jpg" height="200" width="250"/>
+    </div>
+        <div class="container col-xl-6 col-sm-12">
+            <h2> Formulario de registro</h2>
+            <div class="CajaFormulario1">
+                <p>Nombre: <input type="text" name="Nombre" maxlength="10">
+                    Apellido:  <input type="text" name="Apellido" maxlength="10"></p>
+            </div>
+            <div class="CajaFormulario2 "><p>
+                <input type="radio" name="boton" value="hombre"> Hombre
+                <input type="radio" name="boton" value="mujer"> Mujer
+                <input type="radio" name="boton" value="hombre"> No binario</p>
+                <p>Fecha de nacimiento: <input type="text" name="Fecha de nacimiento" placeholder="dd/mm/aa"></p>
+            </div>
+            <div class="CajaFormulario3">
+                <p> <select name="Nacionalidad">
+                    <option selected>Francia</option>
+                    <option>España</option>
+                    <option>Italia</option>
+                </select>
+                </p></div>
+            <div class="CajaFormulario4">
+                <p> <input type="button" value="Enviar" >
+                    <input type="button" value="Limpiar" ></p>
+
+            </div>
+        </div>
+            <div class="container col-xl-3 col-sm-12">
+                <h2>Tabla</h2>
+                <table border="2">
+                    <tbody>
+                    <tr> <td colspan="3">Paises del mundo</td></tr>
+                    <tr> <td>Pais</td> <td>Ciudad</td> <td>Poblacion</td></tr>
+                    <tr> <td rowspan="2">España</td> <td> Madrid</td> <td>4.008.888</td></tr>
+                    <tr> <td> Barcelona </td> <td>6.300.666</td></tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+            <div class="jumbotron col-12 text-center">
+                <footer>
+                    <p id="PieDePagina"> <a name="footer"></a>Pie de pagina</p>
+                </footer>
+            </div>
+</div>
+</body>
+</html>
