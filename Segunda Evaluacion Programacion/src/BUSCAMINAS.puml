@@ -1,0 +1,10 @@
+@startuml
+left to right direction
+
+actor jugador
+rectangle Buscaminas {
+jugador -- (Iniciar partida)
+jugador -- (Descubrir casilla)
+jugador -- (Marcar casilla)
+}
+@enduml
