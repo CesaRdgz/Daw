@@ -1,0 +1,35 @@
+@startuml
+left to right direction
+
+actor socio
+actor SocioSinTienda
+actor fabrica
+actor cliente
+
+rectangle "Acciones socio" {
+socio -- (retirar su parte)
+(retirar su parte) --> (vender su parte)
+(retirar su parte) --> (distribuir entre los clientes)
+}
+
+rectangle "Acciones socio sin tienda"{
+SocioSinTienda -- (reparto de beneficios)
+SocioSinTienda -- (vender)
+(vender) --> socio
+}
+
+rectangle "Acciones cliente"{
+cliente -- (compra en tienda fisica)
+(compra en tienda fisica) --> socio
+cliente -- (consulta app)
+(consulta app) --> (comprar online)
+(consulta app) --> (consultar catalogo)
+(consulta app) --> (consultar precios)
+}
+
+
+
+
+
+
+@enduml

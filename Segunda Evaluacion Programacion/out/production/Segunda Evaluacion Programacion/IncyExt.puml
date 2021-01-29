@@ -1,0 +1,24 @@
+@startuml
+left to right direction
+
+actor Funcionario
+rectangle "subsistema de funcionarios"{
+Funcionario -- (Suscribirse a avisos de normativa)
+Funcionario -- (Consultar normativas)
+(Consultar normativas) <.. (ver una normativa) : <<extend>>
+}
+
+actor Registrador
+rectangle "Subsistema de registradores"{
+Registrador -- (Registrar normativa)
+Registrador -- (Borrar normativa)
+Registrador -- (Reemplazar normativa)
+Registrador -- (Acceso al sistema)
+
+(Consultar normativas) <.. (Registrar normativa) : <<include>>
+(Consultar normativas) <.. (Borrar normativa) : <<include>>
+(Consultar normativas) <.. (Reemplazar normativa) : <<include>>
+}
+
+Registrador --> Funcionario
+@enduml
