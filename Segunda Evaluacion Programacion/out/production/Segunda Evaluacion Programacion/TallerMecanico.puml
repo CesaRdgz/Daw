@@ -1,0 +1,26 @@
+@startuml
+left to right direction
+
+actor mecanicos
+actor gerente
+actor cliente
+actor coches
+
+rectangle accionMecanico{
+mecanicos --- (arreglar)
+(registrar averia en el sistema) -- mecanicos
+mecanicos -- (dar el alta)
+}
+rectangle accionCoches{
+coches -- (arreglar)
+coches -- (registrar averia en el sistema)
+}
+rectangle accionGerente{
+(dar el alta) -- gerente
+gerente -- (cobrar)
+gerente -- (actualizar costos)
+}
+rectangle accionesCliente{
+(cobrar) -- cliente
+}
+@enduml
