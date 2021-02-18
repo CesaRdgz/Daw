@@ -1,0 +1,17 @@
+@startuml
+left to right direction
+
+actor administradorDeProyecto
+
+rectangle AccionesADP{
+administradorDeProyecto --> (encontrar proyecto)
+(encontrar proyecto) -- (agregar)
+(encontrar proyecto) -- (eliminar)
+(encontrar proyecto) -- (actualizar)
+(actualizar) -- (Cambiar la información sobre las tareas del proyecto)
+(actualizar) -- (Cambiar los recursos asociados al proyecto)
+(Cambiar la información sobre las tareas del proyecto) --  (informar)
+(Cambiar los recursos asociados al proyecto) -- (informar)
+}
+
+@enduml

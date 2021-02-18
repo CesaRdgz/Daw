@@ -1,0 +1,23 @@
+@startuml
+left to right direction
+
+actor comerciante
+actor proveedor
+actor inventario
+
+rectangle AccionesComerciante{
+comerciante --> (agregar articulo)
+comerciante ---> (gestionar)
+
+}
+
+proveedor <-- (gestionar)
+
+rectangle AccionesInventario{
+inventario <-- gestionar
+inventario <-- (agregar articulo)
+inventario -- (imprimir el inventario)
+inventario -- (eliminar un articulo)
+inventario -- (editar el archivo)
+}
+@enduml
